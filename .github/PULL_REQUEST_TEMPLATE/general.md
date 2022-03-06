@@ -25,7 +25,7 @@ Make sure to remove this comment when you are done.
 - [ ] [Documentation](README.md) created/updated
 - [ ] Changelog entry added, if necessary
 - [ ] Tests added for this feature/bug
-- [ ] Conforms to the [style guides](https://www.canada.ca/en/government/about/design-system.html)
+- [ ] Conforms to the [style guides](https://www.greguyschka.com/en/about/design-system.html)
 
 ### Related issues
 
