@@ -1,8 +1,0 @@
-1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-delisma.greguyschka.com
-2. Use this code for the value of the TXT record: d2df006b56943790d3e706e1e5a629
-3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
-  
-1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-Gregruyschka.greguyschka.com
-2. Use this code for the value of the TXT record: b68c3cd04537ddffde5217060350f2
-3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
-  

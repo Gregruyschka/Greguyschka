@@ -67,7 +67,8 @@
   --bs-body-font-weight:400;
   --bs-body-line-height:1.5;
   --bs-body-color:rgba(39, 40, 42, 0.7);
-  --bs-body-bg:#f8f8f8
+  --bs-body-bg-rgb-1: rgb(246, 250, 251);
+  --bs-body-bg-rgb-2: var(--bs-white-rgb);
 }
 *,
 *::before,
@@ -87,9 +88,9 @@ body{
   line-height:var(--bs-body-line-height);
   color:var(--bs-body-color);
   text-align:var(--bs-body-text-align);
-  background-color:var(--bs-body-bg);
+  background: linear-gradient( rgb(246, 250, 251), rgb(255, 255, 255));
   -webkit-text-size-adjust:100%;
-  -webkit-tap-highlight-color:rgba(39, 40, 42, 0)
+  -webkit-tap-highlight-color:rgba(39, 40, 42, 0);
 }
 hr{
   margin:1rem 0;
@@ -317,7 +318,11 @@ button{
 button:focus:not(:focus-visible){
   outline:0
 }
-input,button,select,optgroup,textarea{
+input,
+button,
+select,
+optgroup,
+textarea{
   margin:0;
   font-family:inherit;
   font-size:inherit;
@@ -16055,32 +16060,63 @@ a:not([data-aos]):not(.btn):hover{
 
 }
 @media print{
-  
-  .d-print-inline{display:inline !important
+  .d-print-inline{
+    display:inline !important
+  }
+  .d-print-inline-block{
+    display:inline-block !important
+  }
+  .d-print-block{
+    display:block !important
+  }
+  .d-print-grid{
+    display:grid !important
+  }
+  .d-print-table{
+    display:table !important
+  }
+  .d-print-table-row{
+    display:table-row !important
+  }
+  .d-print-table-cell{
+    display:table-cell !important
+  }
+  .d-print-flex{
+    display:flex !important
+  }
+  .d-print-inline-flex{
+    display:inline-flex !important
+  }
+  .d-print-none{
+    display:none !important
+  }
 }
-.d-print-inline-block{
-  display:inline-block !important
+header{
+  position: relative;
 }
-.d-print-block{
-  display:block !important
+header::before {
+  background-image: url(../img/distortion.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 0.04;
+  top: 0;
+  width: 100%;
 }
-.d-print-grid{
-  display:grid !important
+#h1iswmar22 {
+  letter-spacing: 0.01rem;
+  text-shadow: 2px 2px #133247, 3px 3px #ffff;
+  text-transform: uppercase;
 }
-.d-print-table{
-  display:table !important
+#h2iswmar22 {
+  -webkit-text-stroke: 1px #ffffff;
+  color: #133247;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.24em;
+  text-shadow: -1px -1px 1 #fff, 1px -1px 1 #fff, -1px 1px 1 #fff, 0px 1px 1 #fff;
+  text-transform: uppercase;
 }
-.d-print-table-row{
-  display:table-row !important
-}
-.d-print-table-cell{
-  display:table-cell !important
-}
-.d-print-flex{
-  display:flex !important
-}
-.d-print-inline-flex{
-  display:inline-flex !important
-}
-.d-print-none{
-  display:none !important}}
