@@ -1,0 +1,44 @@
+.step {
+  background-color: #f2e8e6;
+  display: none;
+  padding: 12px;
+  max-width:88ch;
+}
+.step legend {
+  min-height: 72px;
+}
+.step .form-group {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.step .form-group>* {
+  padding-bottom: 14px;
+}
+.step-0 h2 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #f2e8e6;
+  text-decoration-thickness: 6px;
+}
+.step-0 input {
+  margin-bottom: 4px;
+}
+.active {
+  display: block;
+}
+.errors-list {
+  color: #b94a48;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  list-style-type: none;
+  margin: 2px 0 3px;
+  padding: 0;
+  opacity: 0;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.errors-list.filled {
+  opacity: 1;
+}
