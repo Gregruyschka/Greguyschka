@@ -1,0 +1,54 @@
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+
+title: Greguyschka
+author: Greguyschka
+email: hello@minageimage.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Greguyschka Félix is a behavioral investigator with a MA in Psychology, for managers and high-achievers. >-
+  She has developed a science-based framework for understanding different personalities to improve EQ and relational intelligence. >-
+  She shares her insights on how people work to improve cross-cultural interpersonal communication and leadership.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.greguyschka.com" # the base hostname & protocol for your site, e.g. http://www.greguyschka.com
+linkedin_username: 
+
+# Analytics
+google_analytics: G-F5XNYQ58N1
+
+# Build settings
+theme: minimal-mistakes-jekyll
+
+plugins:
+ - jekyll-sitemap
+ - jekyll-seo-tag
+ - jekyll-include-cache
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - .github/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _posts/
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - link-check.js
+  - package*.json
+  - README.md
+  - SECURITY.md

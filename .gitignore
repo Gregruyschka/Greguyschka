@@ -69,4 +69,10 @@ vendor
 
 # local Jekyll files
 _site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor
+
+# archive files
+*.zip
