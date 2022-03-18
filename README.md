@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08a687aa-dc35-4d14-a926-52fac28aece5/deploy-status)](https://app.netlify.com/sites/greguyschka/deploys)
 ([Français](#gabarit-pour-dépôts-de-code-source-ouvert-de-greguyschka))
 
 ## Template for Greguyschka open source code repositories
