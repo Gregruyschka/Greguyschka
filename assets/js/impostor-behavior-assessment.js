@@ -28,41 +28,44 @@ form.addEventListener("submit", (e) => {
       scoreInferiority = 0;
 
   document.querySelectorAll( "input[name^='grade-clarity']:checked" ).forEach( checked => {
-    scoreClarity += 100 / document.querySelectorAll( "input[name^='grade-clarity']:checked" ).length * parseInt( checked.value, 10 ) / 10;
+    scoreClarity += parseInt( checked.value, 10 );
     return scoreClarity;
   } );
 
   document.querySelectorAll( "input[name^='grade-confidence']:checked" ).forEach( checked => {
-    scoreConfidence += 100 / document.querySelectorAll( "input[name^='grade-confidence']:checked" ).length * parseInt( checked.value, 10 ) / 10;
+    scoreConfidence += parseInt( checked.value, 10 );
     return scoreConfidence;
   } );
 
   document.querySelectorAll( "input[name^='grade-rejection']:checked" ).forEach( checked => { 
-    scoreRejection += 100 / document.querySelectorAll( "input[name^='grade-rejection']:checked" ).length * parseInt( checked.value, 10 ) / 10;
+    scoreRejection += parseInt( checked.value, 10 );
     return scoreRejection;
   } );
 
    document.querySelectorAll( "input[name^='grade-perfectionism']:checked" ).forEach( checked => { 
-    scorePerfectionism += 100 / document.querySelectorAll( "input[name^='grade-perfectionism']:checked" ).length * parseInt( checked.value, 10 ) / 10;
+    scorePerfectionism += parseInt( checked.value, 10 );
     return scorePerfectionism;
   } );
 
   document.querySelectorAll( "input[name^='grade-inferiority']:checked" ).forEach( checked => { 
-    scoreInferiority += 100 / document.querySelectorAll( "input[name^='grade-inferiority']:checked" ).length * parseInt( checked.value, 10 ) / 10;
+    scoreInferiority += parseInt( checked.value, 10 );
     return scoreInferiority;
   } );
 
-  document.querySelectorAll( "input[name^='grade-']:checked" ).forEach( checked => { 
+  scoreTotal = ( scoreClarity + scoreConfidence + scoreInferiority + scorePerfectionism + scoreRejection ) / document.querySelectorAll( "input[name^='grade-']:checked" ).length * 10;
+
+/*   document.querySelectorAll( "input[name^='grade-']:checked" ).forEach( checked => { 
     scoreTotal += 100 / document.querySelectorAll( "input[name^='grade-']:checked" ).length * parseInt( checked.value, 10 ) / 10;
     return scoreTotal;
-  } );
+  } ); */
 
   document.getElementById( "score-total" ).value =  scoreTotal.toFixed( 2 );
-  document.getElementById( "score-clarity" ).value = scoreClarity.toFixed( 2 );
-  document.getElementById( "score-confidence" ).value = scoreConfidence.toFixed( 2 );
-  document.getElementById( "score-rejection" ).value = scoreRejection.toFixed( 2 );
-  document.getElementById( "score-perfectionism" ).value = scorePerfectionism.toFixed( 2 );
-  document.getElementById( "score-inferiority" ).value = scoreInferiority.toFixed( 2 );
+  document.getElementById( "score-level" ).value = (scoreTotal <= 69) ? "Low" : "High";
+  document.getElementById( "score-clarity" ).value = scoreClarity.toFixed( 2 ) / document.querySelectorAll( "input[name^='grade-clarity']:checked" ).length * 10;
+  document.getElementById( "score-confidence" ).value = scoreConfidence.toFixed( 2 ) / document.querySelectorAll( "input[name^='grade-confidence']:checked" ).length * 10;
+  document.getElementById( "score-rejection" ).value = scoreRejection.toFixed( 2 ) / document.querySelectorAll( "input[name^='grade-rejection']:checked" ).length * 10;
+  document.getElementById( "score-perfectionism" ).value = scorePerfectionism.toFixed( 2 ) / document.querySelectorAll( "input[name^='grade-perfectionism']:checked" ).length * 10;
+  document.getElementById( "score-inferiority" ).value = scoreInferiority.toFixed( 2 )/ document.querySelectorAll( "input[name^='grade-inferiority']:checked" ).length * 10;
   form.submit();
 } );
 
