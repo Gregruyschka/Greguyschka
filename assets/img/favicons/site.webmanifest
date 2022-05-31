@@ -1,0 +1,24 @@
+{
+    "name": "Greguyschka",
+    "short_name": "Greguyschka",
+    "icons": [
+        {
+            "src": "/assets/img/favicons/android-chrome-192x192.png?v=1.0",
+            "sizes": "192x192",
+            "purpose":"any",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/favicons/android-chrome-384x384.png?v=1.0",
+            "sizes": "384x384",
+            "purpose":"maskable",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f0e8e6",
+    "background_color": "#f0e8e6",
+    "start_url": "https://www.greguyschka.com",
+    "scope":"/",
+    "display": "standalone",
+    "orientation":"portrait"
+}
